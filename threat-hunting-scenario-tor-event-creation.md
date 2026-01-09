@@ -1,36 +1,7 @@
-# Threat Event: Unauthorized TOR Usage
+# Threat Event (Unauthorized TOR Usage)
+**Unauthorized TOR Browser Installation and Use**
 
-## Overview
-
-This threat event was created as part of an individual Cyber Range internship project to simulate unauthorized TOR Browser usage on an enterprise endpoint. The goal of this scenario is to intentionally generate endpoint telemetry related to TOR installation, execution, and anonymized network activity so that it can later be detected and analyzed through a structured threat hunting exercise using Microsoft Defender for Endpoint (MDE).
-
-This document represents the “bad actor” phase of the exercise and serves as the foundation for subsequent threat hunting and investigation.
-
----
-
-## Lab Environment
-
-### Azure Virtual Machine Configuration
-
-| Component           | Details                                     |
-| ------------------- | ------------------------------------------- |
-| **VM Name**         | `threat-hunt-lab`                           |
-| **OS Image**        | Windows 11 Pro 25H2                         |
-| **Region**          | East US 2                                   |
-| **VM Size**         | Standard DS1 v2 (1 vCPU, 3.5 GiB RAM)       |
-| **Security Type**   | Trusted Launch (Secure Boot + vTPM enabled) |
-| **Virtual Network** | Cyber-Range-VNet                            |
-| **Subnet**          | Cyber-Range-Subnet                          |
-| **Public IP**       | 172.203.70.40                               |
-| **Private IP**      | 10.0.0.181                                  |
-| **Disk Encryption** | Disabled                                    |
-| **Auto-Shutdown**   | Not enabled                                 |
-| **VM Extensions**   | AzurePolicyforWindows                       |
-
----
-
-## Endpoint Onboarding & Telemetry Validation
-
+## Steps the "Bad Actor" took Create Logs and IoCs:
 1. The virtual machine was onboarded to Microsoft Defender for Endpoint (MDE).
 2. Telemetry ingestion was validated using Advanced Hunting queries to confirm that the endpoint was actively reporting data.
 
