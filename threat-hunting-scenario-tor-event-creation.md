@@ -91,7 +91,7 @@ The `tor-shopping-list.txt` file was deleted to generate additional file system 
 
 ---
 
-## 🔎 Tables Used to Detect Indicators of Compromise (IoCs)
+## Tables Used to Detect Indicators of Compromise (IoCs)
 
 ### DeviceFileEvents
 
@@ -123,7 +123,7 @@ Used to detect TOR-related network activity, specifically anonymized connections
 
 ---
 
-## 🧪 Related Detection Queries
+## Related Detection Queries
 
 ### Detect TOR Browser Installer Download
 
@@ -196,7 +196,7 @@ DeviceFileEvents
 
 ---
 
-## 📄 Metadata
+## Metadata
 
 **Created By:**
 Author Name: **Jordan Calvert**
@@ -210,13 +210,13 @@ Validation Date:
 
 ---
 
-## 📝 Additional Notes
+## Additional Notes
 
 This threat event was created to support an individual Cyber Range internship project focused on simulating unauthorized TOR Browser usage and validating detection and hunting capabilities using Microsoft Defender for Endpoint telemetry.
 
 ---
 
-## 🗂️ Revision History
+## Revision History
 
 | Version | Changes                                              | Date            | Modified By    |
 | ------- | ---------------------------------------------------- | --------------- | -------------- |
