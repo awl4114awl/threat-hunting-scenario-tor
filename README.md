@@ -32,6 +32,8 @@ The following document outlines the threat event design and execution used to ge
 
 Management suspects that some employees may be using TOR browsers to bypass network security controls because recent network logs show unusual encrypted traffic patterns and connections to known TOR entry nodes. Additionally, there have been anonymous reports of employees discussing ways to access restricted sites during work hours. The goal is to detect any TOR usage and analyze related security incidents to mitigate potential risks. If any use of TOR is found, notify management.
 
+---
+
 # Part 2 - Threat Hunting & Analysis
 
 ### High-Level TOR-Related IoC Discovery Plan
@@ -136,9 +138,7 @@ DeviceNetworkEvents
   <img src="screenshots/Screenshot 2026-01-09 074928.png" width="750">
 </p>
 
----
-
-## Chronological Event Timeline
+# Chronological Event Timeline
 
 ### 1. File Download – TOR Browser Installer
 
@@ -290,5 +290,3 @@ The sequence and correlation of these events demonstrate confirmed TOR Browser u
 Unauthorized TOR usage was confirmed on the endpoint `threat-hunt-lab`. In response, the device was isolated to prevent further anonymized network activity, and the incident was documented for management review. The user’s direct manager was notified of the findings.
 
 In a production environment, additional follow-up actions would include conducting a user interview to determine intent, reviewing acceptable use policy compliance, and implementing preventative controls such as application allow-listing, enhanced endpoint monitoring, or network-level blocking of TOR entry nodes to reduce the likelihood of recurrence.
-
----
