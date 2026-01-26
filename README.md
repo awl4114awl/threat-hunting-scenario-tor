@@ -4,7 +4,7 @@
 
 # Threat Hunt Report: Unauthorized TOR Usage
 
-This project documents an end-to-end threat hunting scenario conducted within the Cyber Range environment. The objective of this exercise was to simulate unauthorized TOR browser usage on an endpoint and to perform a full threat hunting investigation using Microsoft Defender for Endpoint (MDE).
+This project documents an end-to-end threat hunting scenario conducted within the [Cyber Range environment](http://joshmadakor.tech/cyber-range). The objective of this exercise was to simulate unauthorized TOR browser usage on an endpoint and to perform a full threat hunting investigation using Microsoft Defender for Endpoint (MDE).
 
 The project is divided into two parts:
 
@@ -13,8 +13,6 @@ A simulated bad actor performs suspicious and policy-violating activity on the n
 
 **Part 2 – Threat Hunting & Analysis**
 A threat hunting operation is conducted in response to the simulated activity from Part 1. Endpoint telemetry is analyzed to identify indicators of compromise (IoCs), reconstruct the attacker’s activity, and produce a formal threat hunt report.
-
----
 
 # Part 1 – Scenario Creation
 
@@ -28,7 +26,9 @@ The following document outlines the threat event design and execution used to ge
 - Kusto Query Language (KQL)
 - Tor Browser
 
-### Scenario
+---
+
+#### Scenario
 
 Management suspects that some employees may be using TOR browsers to bypass network security controls because recent network logs show unusual encrypted traffic patterns and connections to known TOR entry nodes. Additionally, there have been anonymous reports of employees discussing ways to access restricted sites during work hours. The goal is to detect any TOR usage and analyze related security incidents to mitigate potential risks. If any use of TOR is found, notify management.
 
