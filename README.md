@@ -18,7 +18,7 @@ A threat hunting operation is conducted in response to the simulated activity fr
 
 The following document outlines the threat event design and execution used to generate the TOR-related activity observed during this investigation:
 
-**[Threat Event: Unauthorized TOR Usage – Scenario Creation](https://github.com/awl4114awl/lognpacific-public/blob/main/cyber-range/threat-hunting-scenarios/_template_threat_event%28TOR%20Usage%29.md)**
+**[Threat Event: Unauthorized TOR Usage – Scenario Creation](https://github.com/awl4114awl/threat-hunting-scenario-tor/blob/main/threat-hunting-scenario-tor-event-creation.md)**
 
 ### Platforms and Languages Leveraged
 - Windows 11 Virtual Machines (Microsoft Azure)
